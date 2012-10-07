@@ -1,11 +1,15 @@
-Description
-===========
+Fork Description
+================
 
-Creates users from a databag search. Forked from opscode-cookbooks/users to support the following:
+Forked from opscode-cookbooks/users to support the following:
 * remove checks preventing use with chef-solo & edelight/chef-solo-search.git
 * apt-get install libshadow-ruby1.8, to support setting user passwords 
   * See http://wiki.opscode.com/display/chef/Resources#Resources-Prerequisites)
 
+Description
+===========
+
+Creates users from a databag search. 
 
 Requirements
 ============
