@@ -2,9 +2,10 @@ Fork Description
 ================
 
 Forked from opscode-cookbooks/users to support the following:
-* remove checks preventing use with chef-solo & edelight/chef-solo-search.git
-* apt-get install libshadow-ruby1.8, to support setting user passwords 
-  * See http://wiki.opscode.com/display/chef/Resources#Resources-Prerequisites)
+* Downloads searcher.rb and parser.rb libraries from github.com/edelight/chef-solo-search, to enable use with chef-solo
+* Modifies recipe[users::sysadmins] to remove checks preventing use with chef-solo 
+* Adds `recipe[users::sysadmin_sudo]` to grant users in %sysadmin sudo, via `/etc/sudoers.d/users_sysadmin`
+* Adds `recipe[users::ruby_shadow]` to install the `ruby_shadow` gem, necessary for working with user passwords
 
 Description
 ===========
